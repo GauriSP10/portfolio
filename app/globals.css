@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- THEME VARIABLES — SAKURA NIGHT ---- */
+:root {
+  --bg:             #FFF5FA;
+  --bg-card:        #FFFFFF;
+  --bg-card-hover:  #FFEEF6;
+  --border:         rgba(0,0,0,0.08);
+  --border-hover:   rgba(249,168,212,0.4);
+  --text-primary:   #100C18;
+  --text-secondary: #38224A;
+  --text-muted:     #9878B0;
+  --accent-teal:    #9D174D;
+  --accent-blue:    #6D28D9;
+  --accent-amber:   #059669;
+  --side-icon:      rgba(16,12,24,0.3);
+  --side-icon-hover:#9D174D;
+  --side-line:      rgba(16,12,24,0.12);
+  --tag-teal-bg:    rgba(157,23,77,0.08);
+  --tag-blue-bg:    rgba(109,40,217,0.08);
+  --tag-amber-bg:   rgba(5,150,105,0.08);
+  --nav-line-active:#9D174D;
+}
+
+.dark {
+  --bg:             #100C18;
+  --bg-card:        #180F22;
+  --bg-card-hover:  #20152C;
+  --border:         rgba(255,255,255,0.08);
+  --border-hover:   rgba(249,168,212,0.4);
+  --text-primary:   #FFFFFF;
+  --text-secondary: #F5E6F8;
+  --text-muted:     #6B4F80;
+  --accent-teal:    #F9A8D4;
+  --accent-blue:    #C084FC;
+  --accent-amber:   #86EFAC;
+  --side-icon:      rgba(255,255,255,0.35);
+  --side-icon-hover:#F9A8D4;
+  --side-line:      rgba(255,255,255,0.12);
+  --tag-teal-bg:    rgba(249,168,212,0.14);
+  --tag-blue-bg:    rgba(192,132,252,0.12);
+  --tag-amber-bg:   rgba(134,239,172,0.12);
+  --nav-line-active:#F9A8D4;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---- SCROLLBAR ---- */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-teal); }
+
+/* ---- SELECTION ---- */
+::selection { background: var(--accent-teal); color: #100C18; }
+
+/* ---- UTILITY CLASSES ---- */
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted     { color: var(--text-muted); }
+.text-teal      { color: var(--accent-teal); }
+.text-blue-acc  { color: var(--accent-blue); }
+.text-amber-acc { color: var(--accent-amber); }
+
+.bg-card        { background: var(--bg-card); }
+.bg-card-hover  { background: var(--bg-card-hover); }
+.border-theme   { border-color: var(--border); }
+
+.tag-teal   { background: var(--tag-teal-bg);  color: var(--accent-teal); }
+.tag-blue   { background: var(--tag-blue-bg);  color: var(--accent-blue); }
+.tag-amber  { background: var(--tag-amber-bg); color: var(--accent-amber); }
+
+/* ---- SPOTLIGHT ---- */
+.spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: background 0.15s;
+}
+
+/* ---- SECTION FADE IN ---- */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 0.6s ease forwards;
+}
