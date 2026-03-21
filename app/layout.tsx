@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     url: 'https://gauri-prabhakar.vercel.app',
     siteName: 'Gauri Prabhakar',
   },
+  icons: {
+    icon: '/gp_favicon.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

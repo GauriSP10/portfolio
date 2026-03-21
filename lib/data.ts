@@ -53,11 +53,12 @@ export const EXPERIENCE = [
     href: '#',
     intro: 'SLB is one of the world\'s largest oil and gas companies. I was part of the engineering team responsible for a large portfolio of internal APIs powering rig equipment scheduling and maintenance across global operations.',
     bullets: [
-      'Built a .NET API endpoint with a custom query parser and SDK-level implementation that mapped requests directly to MongoDB aggregation pipelines. Response times dropped from several seconds to under a second, an 80% improvement serving both engineers and rig operators.',
+      'Built a .NET API endpoint with a custom query parser and SDK-level implementation that mapped requests directly to MongoDB aggregation pipelines. Response times dropped from several seconds to under a second — an 80% improvement.',
+      'Mentored six engineers across a portfolio of 80+ APIs, providing technical guidance and ensuring quality across every integration.',
       'Wrote a shared APIGEE flow policy fixing broken href links in API metadata. Downstream consumers had scripts trained on those links and were silently breaking across 50+ integrations. One fix, everything unblocked.',
       'Executed a zero-downtime migration of 327,000+ hierarchical MongoDB records across a full schema redesign and platform restructure.',
       'Scripted database correction pipelines that resolved daily inconsistencies causing message pile-ups and operational slowdowns on the rig.',
-      'Identified a gap, built a RAG-style chatbot on internal engineering docs, wiki pages and meeting transcripts entirely on own initiative, and pitched it to leadership as a proof of concept for bringing AI into the team.',
+      'Identified a gap, built a RAG-style chatbot on internal engineering docs, wiki pages and meeting transcripts entirely on own initiative, and pitched it to leadership.',
     ],
     tags: [
       { label: '.NET / C#', color: 'blue' },

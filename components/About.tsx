@@ -19,7 +19,7 @@ export default function About() {
         </p>
         <p className="text-[15px] leading-[1.8]" style={{ color: 'var(--text-secondary)' }}>
           My instinct is always the full picture. Not just the model, but the pipeline feeding it,
-          the backend serving it and the team shipping it. At SLB I supported six engineers across
+          the backend serving it and the team shipping it. At SLB I mentored six engineers across
           a portfolio of 80+ APIs. At iSchoolConnect a tool I built directly contributed to
           onboarding 2 enterprise clients. At AYU I owned the AI layer end to end.
         </p>

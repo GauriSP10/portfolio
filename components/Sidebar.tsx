@@ -86,7 +86,7 @@ export default function Sidebar() {
 
       <div>
         <a
-          href="/resume.pdf"
+          href="/GauriPrabhakar_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-mono text-[11px] tracking-widest uppercase px-4 py-2 rounded border transition-all duration-200"
